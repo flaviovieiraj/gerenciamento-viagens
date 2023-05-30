@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/ControleViagensTaglib/web/menuGerenciamento.jsp</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/ControleViagensTaglib/src/java/com/gerenciamentoViagens/model/entities/Modelo.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/ControleViagensTaglib/web/indexGerenciamento.jsp</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/ControleViagensTaglib/src/java/com/gerenciamentoViagens/model/entities/Local.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/ControleViagensTaglib/web/index.html</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/menuGerenciamento.jsp</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Viagem.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioModelo.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Modelo.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/CadastroModelo.jsp</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/Modelos.jsp</file>
         </group>
     </open-files>
 </project-private>

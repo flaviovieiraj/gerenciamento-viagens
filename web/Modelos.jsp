@@ -1,13 +1,14 @@
 <%-- 
-    Document   : Locais
-    Created on : Apr 25, 2023, 11:19:54 PM
+    Document   : Modelos
+    Created on : May 30, 2023, 2:41:33 PM
     Author     : flaviovieira
 --%>
 
-<%@page import="com.gerenciamentoViagens.model.entities.Local"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page import="com.gerenciamentoViagens.model.entities.Modelo"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c"  uri="http://java.sun.com/jstl/core"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -16,13 +17,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        
-        <title>Locais</title>
+        <title>Modelos</title>
     </head>
     <body class="bg-secondary">
-<c:import url="menuGerenciamento.jsp"/>
-         
-        <h1 class="modal-title">Locais cadastrados</h1>
+        <c:import url="menuGerenciamento.jsp"/>
+            
+        <h1 class="modal-title">Modelos cadastrados</h1>
         
         <%
             String msg = (String) session.getAttribute("msg");
@@ -36,43 +36,36 @@
 
             }
         %>
-        <br>
-        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCadastro">Cadastrar Local</button><br><br>
+         <br>
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCadastro">Cadastrar Modelo</button><br><br>
         
         <table class="table table-striped table-bordered" >
             <tr class="table-dark">
-                <th>Nome</th>
-                <th>Endereco</th>
-                <th>Cidade</th>
-                <th>Estado</th>
-                <th>Ponto de Referencia</th>
-                <th>Descrição</th>
-                <th>Opções</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Tipo de veículo</th>
+                <th>Opcões</th>
             </tr>
             <%
-                List<Local> locais = (List) session.getAttribute("locais");
+                List<Modelo> modelos = (List) session.getAttribute("modelos");
                 
-                if(locais ==null){
-                    response.sendRedirect("LocalServlet");
+                if(modelos ==null){
+                    response.sendRedirect("ModeloServlet");
                     return;
                 }
-                for(Local loc : locais){
+                for(Modelo mod : modelos){
                                     
                 %>
-                
                 <tr>
-                    <td><%= loc.getNome()%></td>
-                    <td><%= loc.getEndereco()%></td>
-                    <td><%= loc.getCidade()%></td>
-                    <td><%= loc.getEstado()%></td>
-                    <td><%= loc.getPontoReferencia()%></td>
-                    <td><%= loc.getDescricao()%></td>
+                    <td><%= mod.getNome()%></td>
+                    <td><%= mod.getMarca()%></td>
+                    <td><%= mod.getTipoVeiculo()%></td>
                     
                     <td>                        
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-  <button type="button" class="btn btn-success" onclick="window.location.href='LocalServlet?cod=<%= loc.getCodigo() %>&op=detalhar'">detalhar</button>
-  <button type="button" class="btn btn-warning" onclick="window.location.href='LocalServlet?cod=<%= loc.getCodigo() %>&op=alterar'">alterar</button>
-  <button type="button" class="btn btn-danger" onclick="window.location.href='LocalServlet?cod=<%= loc.getCodigo() %>&op=deletar'">deletar</button>
+  <button type="button" class="btn btn-success" onclick="window.location.href='ModeloServlet?cod=<%= mod.getCodigo() %>&op=detalhar'">detalhar</button>
+  <button type="button" class="btn btn-warning" onclick="window.location.href='ModeloServlet?cod=<%= mod.getCodigo() %>&op=alterar'">alterar</button>
+  <button type="button" class="btn btn-danger" onclick="window.location.href='ModeloServlet?cod=<%= mod.getCodigo() %>&op=deletar'">deletar</button>
 </div>                </tr>
               <%  }%>
         </table>
@@ -81,13 +74,11 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <%@include file="CadastroLocal.jsp" %>
+                        <%@include file="CadastroModelo.jsp"%>
                         </div>
                 </div>
             </div>
         </div>
                         
-                        
-                       
     </body>
 </html>

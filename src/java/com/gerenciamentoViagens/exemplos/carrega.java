@@ -28,6 +28,8 @@ public class carrega extends SimpleTagSupport{
     public void setMotoristas(List<Motorista> motoristas) {
         this.motoristas = motoristas;
     }
+    
+    
 
 
 

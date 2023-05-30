@@ -46,6 +46,10 @@
           <div class="text-center text-lg-start mt-4 pt-2">
             <button type="submit" class="btn btn-lg btn-dark"
               style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              
+              <button onclick="window.window.location.href='indexGerenciamento.jsp'" type="button" class="btn btn-lg btn-dark"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar sem cadastro</button>
+              
             <p class="small fw-bold mt-2 pt-1 mb-0">Não é um administrador? <a href="#!"
                 class="link-light">Cadastre-se</a></p>
           </div>
