@@ -26,9 +26,6 @@
           <a class="nav-link active" href="#" onclick="window.location.href='MarcaServlet'">Marcas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#" onclick="window.location.href='MotoristaServlet'">Motoristas</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link active" onclick="window.location.href='LocalServlet'" href="#">Locais</a>
         </li>
         <li class="nav-item">
@@ -38,18 +35,17 @@
       </ul>
         </div>
       
-        <div class ="navbar-nav" style="margin-right: 100px">
+        <div class ="navbar-nav">
         <c:if test="${sessionScope.adminLogado != null}">
         <span class="dropdown-center">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 ${sessionScope.adminLogado.nome}
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" onclick="window.location.href='LocalServlet'" href="#">Minhas viagens</a></li>
-            <li><a class="dropdown-item" onclick="window.location.href='LocalServlet'" href="#">Registrar viagem</a></li>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" onclick="window.location.href='Viagens.jsp'" href="#">Minhas viagens</a></li>
             <li><hr class="dropdown-divider"></li>
             <li>
-                <a class="dropdown-item" href="AdminServlet?operacao=logout">Logout</a>   
+                <a class="dropdown-item" href="AdminServlet?op=logout">Logout</a>   
             </li>
           </ul>
         </span>

@@ -5,6 +5,9 @@
  */
 package com.gerenciamentoViagens.model.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  *
@@ -12,17 +15,64 @@ package com.gerenciamentoViagens.model.entities;
  */
 public class Admin {
     
-    private int codigo;
+    //private int codigo;
     private String nome;
     private String senha;
+    
+    private int cnh;
+    private String categoriaHabilitacao;
+    private String telefoneContato;
+    private String endereco;
+    
+    private List<Viagem> viagens;
 
-    public int getCodigo() {
-        return codigo;
+    public List<Viagem> getViagens() {
+        return viagens;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setViagens(List<Viagem> viagens) {
+        this.viagens = viagens;
     }
+    
+    
+    
+    public Admin(){
+        this.viagens = new ArrayList<>();
+    }
+
+    public int getCnh() {
+        return cnh;
+    }
+
+    public void setCnh(int cnh) {
+        this.cnh = cnh;
+    }
+
+    public String getCategoriaHabilitacao() {
+        return categoriaHabilitacao;
+    }
+
+    public void setCategoriaHabilitacao(String categoriaHabilitacao) {
+        this.categoriaHabilitacao = categoriaHabilitacao;
+    }
+
+    public String getTelefoneContato() {
+        return telefoneContato;
+    }
+
+    public void setTelefoneContato(String telefoneContato) {
+        this.telefoneContato = telefoneContato;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    
 
     public String getNome() {
         return nome;

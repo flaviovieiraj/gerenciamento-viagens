@@ -6,6 +6,7 @@
 package com.gerenciamentoViagens.servlets;
 
 import com.gerenciamentoViagens.model.entities.Motorista;
+import com.gerenciamentoViagens.model.entities.Viagem;
 import com.gerenciamentoViagens.model.repositorios.RepositorioMotorista;
 import java.io.IOException;
 import java.util.List;
@@ -98,6 +99,7 @@ public class MotoristaServlet extends HttpServlet {
             RepositorioMotorista.getCurrentInstance().alterar(mot);
             session.setAttribute("msg", "O motorista foi alterado com sucesso.");
         }
+        
         
         response.sendRedirect("MotoristaServlet");
         

@@ -124,4 +124,22 @@
   </attribute>
   -->
   </tag>
+  
+  <tag>
+      <name>carregaViagem</name>
+      <body-content>empty</body-content>
+      <tag-class>com.gerenciamentoViagens.controllers.tags.CarregaViagem</tag-class>
+      <attribute>
+          <name>codigo</name>
+          <type>String</type>
+          <required>true</required>
+          <rtexprvalue>true</rtexprvalue>
+      </attribute>
+  </tag>
+  
+  <tag>
+      <name>carregaViagens</name>
+      <body-content>empty</body-content>
+      <tag-class>com.gerenciamentoViagens.controllers.tags.CarregaViagens</tag-class>
+  </tag>
 </taglib>

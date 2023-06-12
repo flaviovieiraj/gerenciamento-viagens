@@ -23,14 +23,46 @@ public class RepositorioMarca {
     private RepositorioMarca(){
         this.marcas = new ArrayList<>();
         
-        Marca marca1 = new Marca();
+        Marca m1 = new Marca();
+        Marca m2 = new Marca();
+        Marca m3 = new Marca();
+        Marca m4 = new Marca();
+        Marca m5 = new Marca();
         
-        marca1.setCodigo(ultimoIndice);
-        marca1.setNome("Honda");
-        marca1.setNacionalidade("Japão");
-        marca1.setDescricao("blablabla");
+        m1.setCodigo(ultimoIndice);
+        m1.setNome("Honda");
+        m1.setNacionalidade("Japão");
+        m1.setDescricao("blablabla");
         
-        this.marcas.add(marca1);
+        this.marcas.add(m1);
+        
+        m2.setCodigo(ultimoIndice);
+       m2.setNome("Fiat");
+       m2.setNacionalidade("Italia");
+       m2.setDescricao("dsfafdafds");
+       
+       this.marcas.add(m2);
+       
+       m3.setCodigo(ultimoIndice);
+       m3.setNome("Volkswagen");
+       m3.setNacionalidade("Alemanha");
+       m3.setDescricao("sfdlkakljfsa");
+       
+       this.marcas.add(m3);
+       
+       m4.setCodigo(ultimoIndice);
+       m4.setNome("Chevrolet");
+       m4.setNacionalidade("EUA");
+       m4.setDescricao("cxvkzlcxvkl");
+       
+       this.marcas.add(m4);
+       
+       m5.setCodigo(ultimoIndice);
+       m5.setNome("Renault");
+       m5.setNacionalidade("França");
+       m5.setDescricao("xcvzcvxkm");
+       
+       this.marcas.add(m5);
     }
     
     public static RepositorioMarca getCurrentInstance(){

@@ -12,34 +12,83 @@ package com.gerenciamentoViagens.model.entities;
 public class Viagem {
     
     private int codigo;
-    private String dataHoraInicio;
-    private String dataHoraRetorno;
+    private String dataInicio;
+    private String dataRetorno;
+    private String horaInicio;
+    private String horaRetorno;
     private String motivo;
     private String valorCombustivel;
-    private String descricao;
+    private String descricao;    
+    private String localDestino;
+    private String modeloVeiculo;    
+    private String motorista;
 
+    public String getDataInicio() {
+        return dataInicio;
+    }
+
+    public void setDataInicio(String dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    public String getDataRetorno() {
+        return dataRetorno;
+    }
+
+    public void setDataRetorno(String dataRetorno) {
+        this.dataRetorno = dataRetorno;
+    }
+
+    public String getHoraInicio() {
+        return horaInicio;
+    }
+
+    public void setHoraInicio(String horaInicio) {
+        this.horaInicio = horaInicio;
+    }
+
+    public String getHoraRetorno() {
+        return horaRetorno;
+    }
+
+    public void setHoraRetorno(String horaRetorno) {
+        this.horaRetorno = horaRetorno;
+    }
+    
+    
+
+    public String getLocalDestino() {
+        return localDestino;
+    }
+
+    public void setLocalDestino(String localDestino) {
+        this.localDestino = localDestino;
+    }
+
+    public String getModeloVeiculo() {
+        return modeloVeiculo;
+    }
+
+    public void setModeloVeiculo(String modeloVeiculo) {
+        this.modeloVeiculo = modeloVeiculo;
+    }
+
+    public String getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(String motorista) {
+        this.motorista = motorista;
+    }
+    
+    
+    
     public int getCodigo() {
         return codigo;
     }
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
-    }
-
-    public String getDataHoraInicio() {
-        return dataHoraInicio;
-    }
-
-    public void setDataHoraInicio(String dataHoraInicio) {
-        this.dataHoraInicio = dataHoraInicio;
-    }
-
-    public String getDataHoraRetorno() {
-        return dataHoraRetorno;
-    }
-
-    public void setDataHoraRetorno(String dataHoraRetorno) {
-        this.dataHoraRetorno = dataHoraRetorno;
     }
 
     public String getMotivo() {

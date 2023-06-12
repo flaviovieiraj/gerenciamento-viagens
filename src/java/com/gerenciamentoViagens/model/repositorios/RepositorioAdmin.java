@@ -6,6 +6,7 @@
 package com.gerenciamentoViagens.model.repositorios;
 
 import com.gerenciamentoViagens.model.entities.Admin;
+import com.gerenciamentoViagens.model.entities.Viagem;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,9 +25,24 @@ public class RepositorioAdmin {
         
         Admin a = new Admin();
         
-        a.setCodigo(123);
+        a.setCnh(12345678);
         a.setNome("Flávio");
         a.setSenha("1234");
+        a.setCategoriaHabilitacao("A");
+        a.setEndereco("rua 1");
+        a.setTelefoneContato("88888888");
+        
+        
+        
+        Viagem v = new Viagem();
+        
+        v.setCodigo(3);
+        v.setDataInicio("01/02");
+        v.setLocalDestino("Olinda");
+        v.setValorCombustivel("150");
+        v.setModeloVeiculo("bosta");
+        
+        a.getViagens().add(v);
         
         this.adms.add(a);
     }
@@ -43,19 +59,23 @@ public class RepositorioAdmin {
     
     public void alterar(Admin a){
         for(Admin eAux:this.adms){
-            if(a.getCodigo() == eAux.getCodigo()){
+            if(a.getCnh()== eAux.getCnh()){
                 eAux.setNome(a.getNome());
                 eAux.setSenha(a.getSenha());
+                eAux.setCategoriaHabilitacao(a.getCategoriaHabilitacao());
+                eAux.setEndereco(a.getEndereco());
+                eAux.setTelefoneContato(a.getTelefoneContato());
+                eAux.setViagens(a.getViagens());
                 
                 return;
             }
         }
     }
     
-    public Admin ler(int codigo){
+    public Admin ler(int cnh){
         
         for(Admin a:this.adms){
-            if(a.getCodigo()==codigo){
+            if(a.getCnh()==cnh){
                 return a;
             }
         }
@@ -63,9 +83,9 @@ public class RepositorioAdmin {
         return null;
     }
     
-    public Admin realizarLogin(int codigo, String senha){
+    public Admin realizarLogin(int cnh, String senha){
         for(Admin a:this.adms){
-            if(a.getCodigo()==codigo && a.getSenha().equals(senha)){
+            if(a.getCnh()==cnh && a.getSenha().equals(senha)){
                 return a;
             }
         }

@@ -22,6 +22,14 @@ public class RepositorioModelo {
     private RepositorioModelo(){
         this.modelos = new ArrayList<>();
         
+        Modelo modelo1 = new Modelo();
+        modelo1.setCodigo(1);
+        modelo1.setMarca("Fiat");
+        modelo1.setNome("Palio");
+        modelo1.setTipoVeiculo("Passeio");
+        
+        this.modelos.add(modelo1);
+        
     }
     
     public static RepositorioModelo getCurrentInstance(){

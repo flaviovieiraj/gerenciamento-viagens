@@ -14,7 +14,7 @@
 
         <title>Login</title>
     </head>
-     <body>
+     <body style="background-color:black">
         <section class="vh-100">
   <div class="container-fluid h-custom bg-secondary">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -26,13 +26,16 @@
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           
           <form method="post" action="AdminServlet">
-          <input type="hidden" name="operacao" value="login"/>
+          <input type="hidden" name="op" value="login"/>
+          
+          
+          <div class="fw-bold" style="color:red; text-shadow: 1px 1px #000000"><small>${msg}</small></div>
 
                     
           <!-- código -->
           <div class="form-outline mb-4">
-              <input type="codigo" name="codigo"  class="form-control form-control-lg"
-              placeholder="Código de administrador" />
+              <input type="cnh" name="cnh"  class="form-control form-control-lg"
+              placeholder="CNH" />
           </div>
 
           <!-- senha -->
@@ -40,6 +43,7 @@
             <input type="password" name="senha" class="form-control form-control-lg"
               placeholder="Senha" />
           </div>
+          
 
           
 
@@ -48,29 +52,37 @@
               style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
               
               <button onclick="window.window.location.href='indexGerenciamento.jsp'" type="button" class="btn btn-lg btn-dark"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar sem cadastro</button>
-              
-            <p class="small fw-bold mt-2 pt-1 mb-0">Não é um administrador? <a href="#!"
-                class="link-light">Cadastre-se</a></p>
-          </div>
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar sem cadastro</button>        
 
         </form>
+          
+          <p class="small fw-bold mt-2 pt-1 mb-0">Não é cadastrado? 
+                <a href="#!" class=" link-light" data-bs-toggle="modal" data-bs-target="#modalCadastro">Registre-se</a></p>
+          </div>
       </div>
     </div>
   </div>
   <div
-    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-dark" >
+    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-5 px-xl-5 bg-dark" >
     <!-- Copyright -->
     <div class="text-white mb-3 mb-md-0">
       Copyright © 2020. All rights reserved.
     </div>
   </div>
 </section>
+          <div class="modal" id="modalCadastro" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <%@include file="CadastroLogin.jsp" %>
+                        </div>
+                </div>
+            </div>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-        <div style="color:red"><small>${msg}</small></div>
+        
         
     </body>
 </html>
