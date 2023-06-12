@@ -25,11 +25,6 @@
     </script>
 </c:if>
         
-        
-        <!-- importar TAG
-        editar o arquivo TLD
-        -->
-
 
         <h1 class="modal-title">Minhas Viagens</h1><br>
         <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCadastro">Registrar nova viagem</button><br><br>
@@ -38,8 +33,8 @@
             <tr class="table-dark">
                 <th>Destino</th>
                 <th>Data de Ida</th>
-                <th>codigo</th>
                 <th>Veículo</th>
+                <th>codigo</th>
                 <th>Opções</th>
             </tr>
 
@@ -48,8 +43,8 @@
                 <tr>
                     <td>${vg.localDestino}</td>
                     <td>${vg.dataInicio}</td>
-                    <td>${vg.codigo}</td>
                     <td>${vg.modeloVeiculo}</td>
+                    <td>${vg.codigo}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                             <button type="button" class="btn btn-success" onclick="window.location.href ='ViagemServlet?cod=${vg.codigo}&op=detalhar'">detalhar</button>

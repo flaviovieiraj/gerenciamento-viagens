@@ -15,7 +15,9 @@ import java.util.List;
  */
 public class Admin {
     
-    //private int codigo;
+    private int ultimoIndice = 1;
+    
+    
     private String nome;
     private String senha;
     
@@ -39,6 +41,16 @@ public class Admin {
     public Admin(){
         this.viagens = new ArrayList<>();
     }
+
+    public int getUltimoIndice() {
+        return ultimoIndice;
+    }
+
+    public void setUltimoIndice(int ultimoIndice) {
+        this.ultimoIndice = ultimoIndice;
+    }
+    
+    
 
     public int getCnh() {
         return cnh;

@@ -37,7 +37,7 @@ public class LocalServlet extends HttpServlet {
              if(operacao!=null && operacao.equals("alterar")){
                  request.setAttribute("local", loc);
                  
-                 getServletContext().getRequestDispatcher("/CadastroLocal.jsp").forward(request, response);
+                 getServletContext().getRequestDispatcher("/Cadastros/CadastroLocal.jsp").forward(request, response);
                  
                  return;
              } else if (operacao != null && operacao.equals("deletar")){
@@ -72,7 +72,6 @@ public class LocalServlet extends HttpServlet {
         String op = request.getParameter("op");
 
         
-        int cod = Integer.parseInt(request.getParameter("codigo"));
         String nome = request.getParameter("nome");
         String endereco = request.getParameter("endereco");
         String cidade = request.getParameter("cidade");
@@ -83,12 +82,11 @@ public class LocalServlet extends HttpServlet {
         
         Local loc = new Local();  
                 
-        loc.setCodigo(cod);
         loc.setNome(nome);
         loc.setEndereco(endereco);
-        loc.setCidade(cidade);;
-        loc.setEstado(estado);;
-        loc.setPontoReferencia(pontoReferencia);;
+        loc.setCidade(cidade);
+        loc.setEstado(estado);
+        loc.setPontoReferencia(pontoReferencia);
         loc.setDescricao(descricao);
         
         HttpSession session = request.getSession();

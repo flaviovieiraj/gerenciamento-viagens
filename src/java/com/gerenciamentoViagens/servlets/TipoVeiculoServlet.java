@@ -34,7 +34,7 @@ public class TipoVeiculoServlet extends HttpServlet {
             if (operacao!= null && operacao.equals("alterar")){
                 request.setAttribute("tipoveiculo", tipov);
                 
-                getServletContext().getRequestDispatcher("/CadastroTipoVeiculo.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/Cadastros/CadastroTipoVeiculo.jsp").forward(request, response);
                 return;
             } else if (operacao != null && operacao.equals("deletar")){
                 RepositorioTipoVeiculo.getCurrentInstance().deletar(tipov.getCodigo());
@@ -59,14 +59,12 @@ return;
         
         String op = request.getParameter("op");
         
-        int cod = Integer.parseInt(request.getParameter("codigo"));
         String tipo = request.getParameter("tipo");
         String descricao = request.getParameter("descricao");
         
         TipoVeiculo tipov = new TipoVeiculo();
         
         tipov.setTipo(tipo);
-        tipov.setCodigo(cod);
         tipov.setDescricao(descricao);
         
         HttpSession session = request.getSession();

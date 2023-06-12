@@ -24,16 +24,37 @@ public class RepositorioLocal {
         this.locais = new ArrayList<>();
         
         Local l1 = new Local();
+        Local l2 = new Local();
+        Local l3 = new Local();
         
-        l1.setCidade("Recife");
-        l1.setCodigo(ultimoIndice);
-        l1.setDescricao("Minha casa");
-        l1.setEndereco("Rua dos Bobos, 0");
+        l1.setCidade("Ipojuca");
+        l1.setCodigo(1);
+        l1.setDescricao("Casa no litoral");
+        l1.setEndereco("Rua 1");
         l1.setEstado("Pernambuco");
-        l1.setPontoReferencia("Depois da PQP");
-        l1.setNome("Casa");
-        
+        l1.setPontoReferencia("Longe");
+        l1.setNome("Casa de praia");        
         this.locais.add(l1);
+        
+        l2.setCidade("Caruaru");
+        l2.setCodigo(2);
+        l2.setEndereco("Rua 22");
+        l2.setDescricao("Casa no interior");
+        l2.setEstado("Pernamuco");
+        l2.setNome("Casa da vo");
+        l2.setPontoReferencia("fasdçsfdaksl");
+        this.locais.add(l2);
+        
+        l3.setCidade("Sao Paulo");
+        l3.setEstado("Sao Paulo");
+        l3.setNome("Algum lugar");
+        l3.setEndereco("Avenida paulista");
+        l3.setDescricao("safdsafas");
+        l3.setCodigo(3);
+        l3.setPontoReferencia("fdsalçfsasf");
+        this.locais.add(l3);
+        
+        ultimoIndice = 4;
     }
     
     public static RepositorioLocal getCurrentInstance(){
@@ -87,3 +108,4 @@ public class RepositorioLocal {
         return this.locais;
     }
 }
+    

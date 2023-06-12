@@ -25,7 +25,7 @@
 
 
 
-        <h1>Detalhes da viagem</h1>
+        <br><h1>Detalhes da viagem</h1><br>
 
         <ifpe:carregaViagem codigo="${param.cod}"/>
             <div class="col-md-6">

@@ -24,11 +24,7 @@
         <form method="post" action="AdminServlet" >
              <input type="hidden" name ="op" value="registroViagem"/>
              <table class="table">
-                 <tr>
-                    <th>Codigo:</th>
-                    <td><input type="text" name="codigo" class="form-control" value="${requestScope.viagem ne null?requestScope.viagem.codigo:''}"/>
-                    </td>                    
-                </tr>
+                 
                 
                 <tr>
                     <th>

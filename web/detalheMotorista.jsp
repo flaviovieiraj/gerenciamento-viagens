@@ -19,9 +19,9 @@
     <body>
         
 <c:import url="menuGerenciamento.jsp"/>
-        <h1>Detalhes do motorista</h1>
+        <br><h1>Detalhes do motorista</h1><br>
         
-        <table class="table">
+        <table class="table table-dark table-hover">
             <tr>
                 <th>Nome</th>
                 <td>${requestScope.motorista.nome}</td>

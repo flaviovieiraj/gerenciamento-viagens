@@ -19,6 +19,7 @@ public class RepositorioAdmin {
     private static RepositorioAdmin myself = null;
     
     private List<Admin> adms;
+    
 
     private RepositorioAdmin() {
         this.adms = new ArrayList<>();
@@ -36,7 +37,7 @@ public class RepositorioAdmin {
         
         Viagem v = new Viagem();
         
-        v.setCodigo(3);
+        v.setCodigo(1);
         v.setDataInicio("01/02");
         v.setLocalDestino("Olinda");
         v.setValorCombustivel("150");
@@ -45,6 +46,8 @@ public class RepositorioAdmin {
         a.getViagens().add(v);
         
         this.adms.add(a);
+        
+        
     }
     
     public static RepositorioAdmin getCurrentInstance(){

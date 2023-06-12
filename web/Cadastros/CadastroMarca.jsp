@@ -11,19 +11,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-      <center><h1>${(requestScope.marca eq null)?'Cadastro':'Alteração'}de Marca</h1></center>
+      <center><h1>${(requestScope.marca eq null)?'Cadastro':'Alteração'} de Marca</h1></center>
       
       <form method="post" action="MarcaServlet" >
              ${(requestScope.marca ne null)?'<input type="hidden" name ="op" value="alterar"/>':''}
              <table class="table">
-                 <tr>
-                    <th>Codigo:</th>
-                    <td><input type="${(requestScope.marca eq null)?'text':'hidden'}" name="codigo" class="form-control"
-                               value="${requestScope.marca ne null?requestScope.marca.codigo:''}"/>
-                        ${(requestScope.marca ne null)?requestScope.marca.codigo:''}
-                    </td>
-                    
-                </tr>
                  <tr>
                      <th>Nome:</th>
                      <td>

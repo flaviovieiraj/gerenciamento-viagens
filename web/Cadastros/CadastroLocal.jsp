@@ -15,21 +15,13 @@
         <title>Cadastro Local</title>
     </head>
     <body>
-    <center><h1>${(requestScope.local eq null)?'Cadastro':'Alteração'}de Local</h1></center>
+    <center><h1>${(requestScope.local eq null)?'Cadastro':'Alteração'} de Local</h1></center>
     
     <%-- mensagem do servlet--%>
         
          <form method="post" action="LocalServlet" >
              ${(requestScope.local ne null)?'<input type="hidden" name ="op" value="alterar"/>':''}
              <table class="table">
-                 <tr>
-                    <th>Codigo:</th>
-                    <td><input type="${(requestScope.local eq null)?'text':'hidden'}" name="codigo" class="form-control"
-                               value="${requestScope.local ne null?requestScope.local.codigo:''}"/>
-                        ${(requestScope.local ne null)?requestScope.local.codigo:''}
-                    </td>
-                    
-                </tr>
                  <tr>
                      <th>Nome:</th>
                      <td>

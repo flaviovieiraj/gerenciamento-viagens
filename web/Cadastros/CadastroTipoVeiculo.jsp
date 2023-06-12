@@ -21,13 +21,7 @@
         <form method="post" action="TipoVeiculoServlet" >
              ${(requestScope.tipoveiculo ne null)?'<input type="hidden" name ="op" value="alterar"/>':''}
              <table class="table">
-                 <tr>
-                    <th>Codigo:</th>
-                    <td><input type="${(requestScope.tipoveiculo eq null)?'text':'hidden'}" name="codigo" class="form-control"
-                               value="${requestScope.tipoveiculo ne null?requestScope.tipoveiculo.codigo:''}"/>
-                        ${(requestScope.tipoveiculo ne null)?requestScope.tipoveiculo.codigo:''}
-                    </td>
-                </tr>
+                 
                  <tr>
                      <th>Tipo:</th>
                      <td>

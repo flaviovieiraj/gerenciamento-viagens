@@ -34,7 +34,7 @@ public class ModeloServlet extends HttpServlet {
             if(operacao!=null && operacao.equals("alterar")){
             request.setAttribute("modelo", mod);
             
-            getServletContext().getRequestDispatcher("/CadastroModelo.jsp").forward(request, response);
+            getServletContext().getRequestDispatcher("/Cadastros/CadastroModelo.jsp").forward(request, response);
             
             return;
         } else if (operacao != null && operacao.equals("deletar")){

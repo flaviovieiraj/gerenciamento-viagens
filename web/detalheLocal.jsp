@@ -15,14 +15,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <title>Detalhes do local</title>
     </head>
-    <body>
+    <body class="bg-secondary">
         
         
 <c:import url="menuGerenciamento.jsp"/>
-        <h1>Detalhes do local</h1>
+       <br> <h1>Detalhes do local</h1><br>
         
-        <table class="table">
+        <table class="table table-dark table-hover">
             <tr>
+                <th>Código</th>
+                <td>#${requestScope.local.codigo}</td>
+                <tr></tr>
                 <th>Nome</th>
                 <td>${requestScope.local.nome}</td>
                 <tr></tr>

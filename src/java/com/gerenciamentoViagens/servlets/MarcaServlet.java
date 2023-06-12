@@ -36,7 +36,7 @@ public class MarcaServlet extends HttpServlet {
             if(operacao!=null && operacao.equals("alterar")){
                 request.setAttribute("marca", mar);
                 
-                getServletContext().getRequestDispatcher("/CadastroMarca.jsp").forward(request, response);
+                getServletContext().getRequestDispatcher("/Cadastros/CadastroMarca.jsp").forward(request, response);
                 
                 return;
             } else if (operacao != null && operacao.equals("deletar")){
@@ -63,14 +63,12 @@ public class MarcaServlet extends HttpServlet {
         
         String op = request.getParameter("op");
         
-        int cod = Integer.parseInt(request.getParameter("codigo"));
         String nome = request.getParameter("nome");
         String nacionalidade = request.getParameter("nacionalidade");
         String descricao = request.getParameter("descricao");
         
         Marca mar = new Marca();
         
-        mar.setCodigo(cod);
         mar.setNome(nome);
         mar.setNacionalidade(nacionalidade);
         mar.setDescricao(descricao);

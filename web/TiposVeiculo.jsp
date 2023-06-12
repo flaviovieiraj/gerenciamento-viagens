@@ -38,6 +38,7 @@
             <tr class="table-dark">
                 <th>Tipo</th>
                 <th>Descrição</th>
+                <th>codigo</th>
                 <th>Opcões</th>
             </tr>
             <%
@@ -54,6 +55,7 @@
                 <tr>
                     <td><%= tipov.getTipo()%></td>
                     <td><%= tipov.getDescricao()%></td>
+                    <td><%= tipov.getCodigo()%></td>
                     
                     <td>                        
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
@@ -68,7 +70,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <%@include file="CadastroTipoVeiculo.jsp" %>
+                        <%@include file="/Cadastros/CadastroTipoVeiculo.jsp" %>
                         </div>
                 </div>
             </div>

@@ -87,7 +87,12 @@ public class AdminServlet extends HttpServlet {
                 
                 case "registroViagem":
                     
-                int codigo = Integer.parseInt(request.getParameter("codigo"));
+                    
+                Admin motoristaLogado = (Admin)request.getSession().getAttribute("adminLogado");
+                int ultimoIndice = motoristaLogado.getUltimoIndice();
+                ultimoIndice++;
+                motoristaLogado.setUltimoIndice(ultimoIndice);
+                
                 String dataInicio = request.getParameter("dataInicio");
                 String dataRetorno = request.getParameter("dataRetorno");
                 String horaInicio = request.getParameter("horaInicio");
@@ -101,7 +106,9 @@ public class AdminServlet extends HttpServlet {
                 
                 Viagem vg = new Viagem();
                 
-                vg.setCodigo(codigo);
+                
+                vg.setCodigo(ultimoIndice);
+                
                 vg.setDataInicio(dataInicio);
                 vg.setDataRetorno(dataRetorno);
                 vg.setDescricao(descricao);
@@ -112,7 +119,6 @@ public class AdminServlet extends HttpServlet {
                 vg.setValorCombustivel(valorCombustivel);
                 vg.setMotivo(motivo);
                 
-                Admin motoristaLogado = (Admin)request.getSession().getAttribute("adminLogado");
                 
                 motoristaLogado.getViagens().add(vg);
                 

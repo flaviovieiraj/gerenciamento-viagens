@@ -29,40 +29,42 @@ public class RepositorioMarca {
         Marca m4 = new Marca();
         Marca m5 = new Marca();
         
-        m1.setCodigo(ultimoIndice);
+        m1.setCodigo(1);
         m1.setNome("Honda");
         m1.setNacionalidade("Japão");
         m1.setDescricao("blablabla");
         
         this.marcas.add(m1);
         
-        m2.setCodigo(ultimoIndice);
+        m2.setCodigo(2);
        m2.setNome("Fiat");
        m2.setNacionalidade("Italia");
        m2.setDescricao("dsfafdafds");
        
        this.marcas.add(m2);
        
-       m3.setCodigo(ultimoIndice);
+       m3.setCodigo(3);
        m3.setNome("Volkswagen");
        m3.setNacionalidade("Alemanha");
        m3.setDescricao("sfdlkakljfsa");
        
        this.marcas.add(m3);
        
-       m4.setCodigo(ultimoIndice);
+       m4.setCodigo(4);
        m4.setNome("Chevrolet");
        m4.setNacionalidade("EUA");
        m4.setDescricao("cxvkzlcxvkl");
        
        this.marcas.add(m4);
        
-       m5.setCodigo(ultimoIndice);
+       m5.setCodigo(5);
        m5.setNome("Renault");
        m5.setNacionalidade("França");
        m5.setDescricao("xcvzcvxkm");
        
        this.marcas.add(m5);
+       
+       ultimoIndice = 6;
     }
     
     public static RepositorioMarca getCurrentInstance(){

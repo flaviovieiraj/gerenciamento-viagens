@@ -20,7 +20,7 @@
     </head>
     <body>
         
-        <center><h1>${(requestScope.modelo eq null)?'Cadastro':'Alteração'}de Modelo</h1></center>
+        <center><h1>${(requestScope.modelo eq null)?'Cadastro':'Alteração'} de Modelo</h1></center>
         
         
         <form method="post" action="ModeloServlet" >

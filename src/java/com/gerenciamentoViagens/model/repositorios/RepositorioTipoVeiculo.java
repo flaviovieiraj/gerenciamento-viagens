@@ -24,13 +24,28 @@ public class RepositorioTipoVeiculo {
         this.tiposVeiculo = new ArrayList<>();     
         
         TipoVeiculo tipo1 = new TipoVeiculo();
+        TipoVeiculo tipo2 = new TipoVeiculo();
+        TipoVeiculo tipo3 = new TipoVeiculo();
         
-        tipo1.setTipo("Carro de passeio");
+        tipo1.setTipo("Passeio");
         tipo1.setDescricao("Veiculo com 5 lugares");
-        tipo1.setCodigo(ultimoIndice);
+        tipo1.setCodigo(1);
         
         this.tiposVeiculo.add(tipo1);
         
+        tipo2.setTipo("Moto");
+        tipo2.setDescricao("Veículo com 2 lugares");
+        tipo2.setCodigo(2);
+        
+        this.tiposVeiculo.add(tipo2);
+        
+        tipo3.setCodigo(3);
+        tipo3.setTipo("Van");
+        tipo3.setDescricao("Veículo com 20 lugares");
+        
+        this.tiposVeiculo.add(tipo3);
+        
+        ultimoIndice = 4;
     }
     
     public static RepositorioTipoVeiculo getCurrentInstance(){

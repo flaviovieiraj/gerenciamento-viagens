@@ -74,7 +74,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <%@include file="CadastroLogin.jsp" %>
+                        <%@include file="/Cadastros/CadastroLogin.jsp" %>
                         </div>
                 </div>
             </div>
