@@ -26,14 +26,7 @@
         <form method="post" action="ModeloServlet" >
              ${(requestScope.modelo ne null)?'<input type="hidden" name ="op" value="alterar"/>':''}
              <table class="table">
-                 <tr>
-                    <th>Codigo:</th>
-                    <td><input type="${(requestScope.modelo eq null)?'text':'hidden'}" name="codigo" class="form-control"
-                               value="${requestScope.modelo ne null?requestScope.modelo.codigo:''}"/>
-                        ${(requestScope.modelo ne null)?requestScope.modelo.codigo:''}
-                    </td>
-                    
-                </tr>
+                 
                  <tr>
                      <th>Modelo:</th>
                      <td>

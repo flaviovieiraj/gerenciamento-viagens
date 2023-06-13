@@ -34,7 +34,6 @@
                 <th>Destino</th>
                 <th>Data de Ida</th>
                 <th>Veículo</th>
-                <th>codigo</th>
                 <th>Opções</th>
             </tr>
 
@@ -44,7 +43,6 @@
                     <td>${vg.localDestino}</td>
                     <td>${vg.dataInicio}</td>
                     <td>${vg.modeloVeiculo}</td>
-                    <td>${vg.codigo}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                             <button type="button" class="btn btn-success" onclick="window.location.href ='ViagemServlet?cod=${vg.codigo}&op=detalhar'">detalhar</button>

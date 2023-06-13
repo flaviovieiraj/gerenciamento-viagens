@@ -1,23 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.gerenciamentoViagens.model.repositorios;
 
 import com.gerenciamentoViagens.model.entities.Modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author flaviovieira
- */
 public class RepositorioModelo {
     
     private static RepositorioModelo myself = null;
     
     private List<Modelo> modelos;
+    
+    
+    private int ultimoIndice = 1;
     
     private RepositorioModelo(){
         this.modelos = new ArrayList<>();
@@ -30,6 +25,8 @@ public class RepositorioModelo {
         
         this.modelos.add(modelo1);
         
+        ultimoIndice = 2;
+        
     }
     
     public static RepositorioModelo getCurrentInstance(){
@@ -39,6 +36,7 @@ public class RepositorioModelo {
     }
     
     public void inserir(Modelo mod){
+        mod.setCodigo(this.ultimoIndice++);
         this.modelos.add(mod);
     }
     

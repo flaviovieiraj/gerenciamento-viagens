@@ -45,7 +45,6 @@
                 <th>Endereco</th>
                 <th>Cidade</th>
                 <th>Estado</th>
-                <th>codigo</th>
                 <th>Opções</th>
             </tr>
 
@@ -56,7 +55,6 @@
                     <td>${loc.endereco}</td>
                     <td>${loc.cidade}</td>
                     <td>${loc.estado}</td>
-                    <td>${loc.codigo}</td>
 
                     <td>                        
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">

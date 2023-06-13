@@ -32,13 +32,11 @@
           <div class="fw-bold" style="color:red; text-shadow: 1px 1px #000000"><small>${msg}</small></div>
 
                     
-          <!-- código -->
           <div class="form-outline mb-4">
               <input type="cnh" name="cnh"  class="form-control form-control-lg"
               placeholder="CNH" />
           </div>
 
-          <!-- senha -->
           <div class="form-outline mb-3">
             <input type="password" name="senha" class="form-control form-control-lg"
               placeholder="Senha" />
@@ -64,7 +62,6 @@
   </div>
   <div
     class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-5 px-xl-5 bg-dark" >
-    <!-- Copyright -->
     <div class="text-white mb-3 mb-md-0">
       Copyright © 2020. All rights reserved.
     </div>

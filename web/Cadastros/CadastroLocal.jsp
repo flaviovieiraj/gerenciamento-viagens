@@ -17,7 +17,6 @@
     <body>
     <center><h1>${(requestScope.local eq null)?'Cadastro':'Alteração'} de Local</h1></center>
     
-    <%-- mensagem do servlet--%>
         
          <form method="post" action="LocalServlet" >
              ${(requestScope.local ne null)?'<input type="hidden" name ="op" value="alterar"/>':''}

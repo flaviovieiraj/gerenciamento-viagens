@@ -38,10 +38,15 @@ public class RepositorioAdmin {
         Viagem v = new Viagem();
         
         v.setCodigo(1);
-        v.setDataInicio("01/02");
+        v.setDataInicio("01/02/2022");
+        v.setDataRetorno("10/02/2022");
+        v.setHoraInicio("09:00");
+        v.setHoraRetorno("15:30");
         v.setLocalDestino("Olinda");
-        v.setValorCombustivel("150");
-        v.setModeloVeiculo("bosta");
+        v.setValorCombustivel("50");
+        v.setModeloVeiculo("Palio");
+        v.setDescricao("tsfdalkfslçksfsdk");
+        v.setMotivo("trabalho");
         
         a.getViagens().add(v);
         

@@ -43,7 +43,6 @@
                 <th>Nome</th>
                 <th>Nacionalidade</th>
                 <th>Descrição</th>
-                <th>codigo</th>
                 <th>Opcões</th>
             </tr>
 
@@ -52,7 +51,6 @@
                     <td>${marca.nome}</td>
                     <td>${marca.nacionalidade}</td>
                     <td>${marca.descricao}</td>
-                    <td>${marca.codigo}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                             <button type="button" class="btn btn-success" onclick="window.location.href = 'MarcaServlet?cod=${marca.codigo}&op=detalhar'">detalhar</button>

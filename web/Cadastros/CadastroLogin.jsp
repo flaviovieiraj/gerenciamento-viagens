@@ -16,8 +16,6 @@
     </head>
     <body>
     <center><h1>Cadastro de Motorista</h1></center>
-    
-     <%-- mensagem do servlet--%>
         
          <form method="post" action="AdminServlet" >
              <input type="hidden" name ="op" value="cadastro"/>
@@ -55,7 +53,7 @@
                  <tr>
                      <th>Senha:</th>
                      <td>
-                         <input type="text" name="senha" class="form-control" value="${requestScope.admin ne null?requestScope.admin.senhaMotorista:''}"/>
+                         <input type="password" name="senha" class="form-control" value="${requestScope.admin ne null?requestScope.admin.senhaMotorista:''}"/>
                      </td>
                  </tr>
                  

@@ -63,14 +63,12 @@ public class ModeloServlet extends HttpServlet {
         
         String op = request.getParameter("op");
         
-        int cod = Integer.parseInt(request.getParameter("codigo"));
         String nome = request.getParameter("nome");
         String marca = request.getParameter("marca");
         String tipoVeiculo = request.getParameter("tipoVeiculo");
         
         Modelo mod = new Modelo();
         
-        mod.setCodigo(cod);
         mod.setNome(nome);
         mod.setMarca(marca);
         mod.setTipoVeiculo(tipoVeiculo);

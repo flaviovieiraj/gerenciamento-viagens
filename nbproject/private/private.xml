@@ -3,16 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/Viagens.jsp</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/detalheViagem.jsp</file>
             <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/AdminServlet.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Viagem.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioAdmin.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/TipoVeiculoServlet.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/MarcaServlet.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Marca.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioModelo.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Modelo.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioLocal.java</file>
             <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/ViagemServlet.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/Marcas.jsp</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/LocalServlet.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioAdmin.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioTipoVeiculo.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/detalheModelo.jsp</file>
             <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioViagem.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/entities/Admin.java</file>
-            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/RegistroViagem.jsp</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/model/repositorios/RepositorioMarca.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/src/java/com/gerenciamentoViagens/servlets/ModeloServlet.java</file>
+            <file>file:/C:/Users/vieir/Documents/NetBeansProjects/GerenciamentoViagens/web/WEB-INF/tlds/IFPETags.tld</file>
         </group>
     </open-files>
 </project-private>

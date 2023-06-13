@@ -3,6 +3,8 @@
   <tlib-version>1.0</tlib-version>
   <short-name>ifpetags</short-name>
   <uri>com.gerenciamentoviagens.tags</uri>
+  
+  
   <!-- A validator verifies that the tags are used correctly at JSP
           translation time. Validator entries look like this: 
        <validator>
@@ -19,12 +21,7 @@
       <listener>
           <listener-class>com.mycompany.TagLibListener</listener-class> 
       </listener>
-    -->
-    
-  
-  
-  
-  
+    -->   
   <tag>
       <name>
           carrega
